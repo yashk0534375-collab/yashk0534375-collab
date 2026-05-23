@@ -127,6 +127,12 @@ ${cellsHTML}
 
   <g>
     <animateTransform attributeName="transform" type="translate" values="${GOKU_START_X},0; ${totalWidth + 80},0" dur="${animationDuration}s" repeatCount="indefinite" />
+    
+    <!-- Nimbus Tail (Trails infinitely to the left) -->
+    <rect x="-2000" y="${GRID_OFFSET_Y + 20 + 44}" width="2015" height="2" fill="#d85b16" />
+    <rect x="-2000" y="${GRID_OFFSET_Y + 20 + 46}" width="2015" height="4" fill="#ffdf95" />
+    <rect x="-2000" y="${GRID_OFFSET_Y + 20 + 50}" width="2015" height="2" fill="#d85b16" />
+
     <image 
       href="${GOKU_SPRITE}" 
       xlink:href="${GOKU_SPRITE}" 
