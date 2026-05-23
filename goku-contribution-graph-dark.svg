@@ -696,7 +696,8 @@
     <rect x="728" y="119" width="11" height="11" fill="#39d353" class="cell" />
 
   <g>
-    <animateTransform attributeName="transform" type="translate" values="-72,0; 819,0" dur="8s" repeatCount="indefinite" />
+    <animateTransform attributeName="transform" type="translate" values="-72,0; 819,0" dur="8s" repeatCount="indefinite" additive="sum" />
+    <animateTransform attributeName="transform" type="translate" values="0,0; 0,-6; 0,0; 0,-2; 0,0" dur="1.2s" repeatCount="indefinite" additive="sum" />
 
     <!-- Nimbus Tail (Shortened) -->
     <rect x="-40" y="109" width="60" height="2" fill="#d85b16" />
