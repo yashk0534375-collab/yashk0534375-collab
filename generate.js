@@ -2047,7 +2047,8 @@ function generateSVG(grid) {
 ${cellsHTML}
 
   <g>
-    <animateTransform attributeName="transform" type="translate" values="${GOKU_START_X},0; ${totalWidth + 80},0" dur="${animationDuration}s" repeatCount="indefinite" />
+    <animateTransform attributeName="transform" type="translate" values="${GOKU_START_X},0; ${totalWidth + 80},0" dur="${animationDuration}s" repeatCount="indefinite" additive="sum" />
+    <animateTransform attributeName="transform" type="translate" values="0,0; 0,-6; 0,0; 0,-2; 0,0" dur="1.2s" repeatCount="indefinite" additive="sum" />
 
     <!-- Nimbus Tail (Shortened) -->
     <rect x="-40" y="${GRID_OFFSET_Y + 20 + 54}" width="60" height="2" fill="#d85b16" />
