@@ -2048,7 +2048,7 @@ ${cellsHTML}
 
   <g>
     <animateTransform attributeName="transform" type="translate" values="${GOKU_START_X},0; ${totalWidth + 80},0" dur="${animationDuration}s" repeatCount="indefinite" additive="sum" />
-    <animateTransform attributeName="transform" type="translate" values="0,0; 0,-6; 0,0; 0,-2; 0,0" dur="1.2s" repeatCount="indefinite" additive="sum" />
+    <animateTransform attributeName="transform" type="translate" values="0,0; 0,-5; 0,0" keyTimes="0; 0.5; 1" keySplines="0.42 0 0.58 1; 0.42 0 0.58 1" calcMode="spline" dur="2s" repeatCount="indefinite" additive="sum" />
 
     <!-- Nimbus Tail (Shortened) -->
     <rect x="-40" y="${GRID_OFFSET_Y + 20 + 54}" width="60" height="2" fill="#d85b16" />
