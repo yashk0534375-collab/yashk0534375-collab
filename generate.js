@@ -2072,6 +2072,26 @@ ${cellsHTML}
       <rect x="-45" y="${GRID_OFFSET_Y + 20 + 58}" width="3" height="2" fill="#ffdf95">
         <animate attributeName="opacity" values="0;1;0" dur="0.6s" repeatCount="indefinite" />
       </rect>
+      <!-- Additional Particles -->
+      <rect x="-55" y="${GRID_OFFSET_Y + 20 + 54}" width="2" height="2" fill="#ffdf95">
+        <animate attributeName="opacity" values="1;0" dur="0.9s" repeatCount="indefinite" />
+        <animate attributeName="x" values="-40;-65" dur="0.9s" repeatCount="indefinite" />
+      </rect>
+      <rect x="-35" y="${GRID_OFFSET_Y + 20 + 64}" width="3" height="3" fill="#d85b16">
+        <animate attributeName="opacity" values="0;1;0" dur="1.1s" repeatCount="indefinite" />
+        <animate attributeName="x" values="-25;-45" dur="1.1s" repeatCount="indefinite" />
+      </rect>
+      <rect x="-65" y="${GRID_OFFSET_Y + 20 + 57}" width="2" height="2" fill="#ffdf95">
+        <animate attributeName="opacity" values="1;0;1" dur="1.4s" repeatCount="indefinite" />
+        <animate attributeName="x" values="-45;-80" dur="1.4s" repeatCount="indefinite" />
+      </rect>
+      <rect x="-70" y="${GRID_OFFSET_Y + 20 + 60}" width="4" height="2" fill="#d85b16">
+        <animate attributeName="opacity" values="0;1;0" dur="0.7s" repeatCount="indefinite" />
+        <animate attributeName="x" values="-50;-75" dur="0.7s" repeatCount="indefinite" />
+      </rect>
+      <rect x="-40" y="${GRID_OFFSET_Y + 20 + 63}" width="2" height="2" fill="#ffdf95">
+        <animate attributeName="opacity" values="1;0;1" dur="0.5s" repeatCount="indefinite" />
+      </rect>
     </g>
 
     
@@ -2080,7 +2100,7 @@ ${cellsHTML}
     
 
     
-    <g transform="translate(15, ${GRID_OFFSET_Y + 25}) scale(${GOKU_SCALE}, ${GOKU_SCALE})">
+    <g transform="translate(0, ${GRID_OFFSET_Y + 25}) scale(${GOKU_SCALE}, ${GOKU_SCALE})">
       ${GOKU_SPRITE}
     </g>
 
