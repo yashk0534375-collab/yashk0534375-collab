@@ -116,25 +116,20 @@ function generateSVG(grid) {
     return `    <rect x="${x}" y="${y}" width="${CELL_SIZE}" height="${CELL_SIZE}" fill="${color}" class="cell" />`;
   }).join('\n');
 
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="${totalWidth}" height="${totalHeight}" viewBox="0 0 ${totalWidth} ${totalHeight}">
+  return `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="${totalWidth}" height="${totalHeight}" viewBox="0 0 ${totalWidth} ${totalHeight}">
   <defs>
     <style>
       .cell { rx: 2px; ry: 2px; }
-      @keyframes fly {
-        0% { transform: translateX(${GOKU_START_X}px); }
-        100% { transform: translateX(${totalWidth + 80}px); }
-      }
-      .goku-container {
-        animation: fly ${animationDuration}s linear infinite;
-      }
     </style>
   </defs>
 
 ${cellsHTML}
 
-  <g class="goku-container">
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="${GOKU_START_X},0; ${totalWidth + 80},0" dur="${animationDuration}s" repeatCount="indefinite" />
     <image 
       href="${GOKU_SPRITE}" 
+      xlink:href="${GOKU_SPRITE}" 
       x="0" 
       y="${GRID_OFFSET_Y + 20}" 
       width="43" 
