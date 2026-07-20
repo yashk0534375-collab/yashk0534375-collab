@@ -681,7 +681,8 @@
     </rect>
     <rect x="714" y="105" width="11" height="11" fill="#161b22" class="cell" />
     <rect x="714" y="119" width="11" height="11" fill="#161b22" class="cell" />
-    <rect x="728" y="35" width="11" height="11" fill="#161b22" class="cell" />
+    <rect x="728" y="35" width="11" height="11" fill="#0e4429" class="cell" />
+    <rect x="728" y="49" width="11" height="11" fill="#161b22" class="cell" />
 
   <g>
     <animateTransform attributeName="transform" type="translate" values="-72,0; 819,0" dur="8s" repeatCount="indefinite" additive="sum" />
